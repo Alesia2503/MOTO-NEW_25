@@ -192,7 +192,7 @@ body {
   width: 100%;
   aspect-ratio: 16/8;
   background: #000;
-  background-image: url(img/Mask.jpg);
+  background-image: url(img/Mask.webp);
   background-repeat: no-repeat;
   /* Уменьшаем размер изображения */
   background-size: 45vw auto; /* Ширина 300px, высота автоматически */
