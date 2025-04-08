@@ -196,9 +196,9 @@ body {
   background-image: url(img/Mask.png);
   background-repeat: no-repeat;
   /* Уменьшаем размер изображения */
-  background-size: 40vw auto; /* Ширина 300px, высота автоматически */
+  background-size: 45vw auto; /* Ширина 300px, высота автоматически */
   /* Позиционируем внизу слева с отступом */
-  background-position: left 0 bottom -30px; /* Отступы 20px */
+  background-position: left 0 bottom -1.9vw; /* Отступы 20px */
   filter: saturate(150%);
   /* Фиксируем блок на экране */
   /* position: fixed;
@@ -220,7 +220,7 @@ body {
   white-space: nowrap;
   color: rgb(255, 255, 255);
   padding-right: 4vw;
-  padding-top: 8vw;
+  padding-top: 10vw;
   text-align: right;
   color: #ff6b6b; /* Цвет для браузеров без поддержки */
   background: linear-gradient(to right, #ff9800, #9400D3, #ff9800);
