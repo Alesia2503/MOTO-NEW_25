@@ -177,23 +177,22 @@ body {
   display: none;
 }
 
-.content {
+/* .content {
   width: 100%;
-  /* aspect-ratio: 16/11; */
   aspect-ratio: 20/15;
   background: #000;
-  background-image: url(img/Mask.png);
+  background-image: url(img/Mask.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   filter: saturate(150%);
-}
+} */
 
 .content {
   width: 100%;
   aspect-ratio: 16/8;
   background: #000;
-  background-image: url(img/Mask.png);
+  background-image: url(img/Mask.jpg);
   background-repeat: no-repeat;
   /* Уменьшаем размер изображения */
   background-size: 45vw auto; /* Ширина 300px, высота автоматически */
@@ -205,6 +204,9 @@ body {
   left: 0;
   bottom: 0; */
   /* z-index: 1000; Чтобы контент был поверх других элементов */
+  box-shadow: 0 10px 30px rgba(216, 19, 19, 0.2);
+  /* filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5)); */
+  
 }
 
 .content_text {
@@ -518,7 +520,7 @@ body {
 }
   .slider-container {
     /* position: relative; */
-    width: 500px; /* Задайте желаемую ширину слайдера */
+    max-width: 500px; /* Задайте желаемую ширину слайдера */
     height: 430px; /* Задайте желаемую высоту слайдера */
     overflow: hidden;
     margin: 0 auto;
@@ -534,7 +536,7 @@ body {
 
     .slider-track {
     display: flex;
-    width: calc(500px * 5); /* Умножьте ширину на количество изображений */
+    max-width: calc(500px * 5); /* Умножьте ширину на количество изображений */
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
     }
