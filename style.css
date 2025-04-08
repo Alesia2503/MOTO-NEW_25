@@ -611,7 +611,7 @@ body {
 
   .maps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
     gap: 1rem;
     }
     
@@ -1281,8 +1281,11 @@ input[name="r"] {
 
 @media (max-width:300px) { 
  .motorcycle-list {
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   }
+  .equipment-list {
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+}
 }
 
 @media (max-width:200px) { 
