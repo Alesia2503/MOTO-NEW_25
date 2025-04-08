@@ -259,6 +259,7 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 253, 253, 0.2);
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   padding-bottom: 1rem;
@@ -267,6 +268,7 @@ body {
   .motorcycle-card:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
   }
   
   .motorcycle-card img {
@@ -332,8 +334,8 @@ body {
 /* Equipment Section Styles */
 .equipment {
   padding: 2.5vw 0;
-  background-color: #857f7f; /* Purple background */
-  color: #eee;
+  background-color: #ffffff; /* Purple background */
+  color: #000000;
   font-weight: 400;
   }
   
@@ -354,7 +356,7 @@ body {
   
   .equipment-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 2vw;
   text-align: center;
   }
@@ -1069,6 +1071,18 @@ input[name="r"] {
   filter: grayscale(200%);
 }
 
+
+
+@media (max-width:1155px) {
+.equipment-list {
+  grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width:1105px) {
+  .equipment-list {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+  }
 @media (max-width:1100px) {
   .freepik {
     top: 54%;
@@ -1214,6 +1228,25 @@ input[name="r"] {
   .bar1 {
     margin: 15px;
   }
+
+  /* .equipment-list {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    } */
+
+    .gift-content {
+   flex-direction: column;
+      }
+      
+      .gift-content img {
+      max-width: 80%;
+      /* height: auto;
+      border-radius: 1vw;
+      box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3); */
+      }
+      .gift-text {
+       max-width: 80%;
+       text-align: center;
+      }
 }
 
 @media (max-width:710px) {
@@ -1235,6 +1268,10 @@ input[name="r"] {
   .about_grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .equipment-list {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
 }
 
 /* @media (max-width:590px) { 
