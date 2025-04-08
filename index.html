@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/Screenshot_1.png" type="image/x-icon">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>FASTMOTORS</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header_flex">
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="header_number">
+          <div>
+            <div class="header_phone">
+              <!-- <p class="phone_text">Наши телефоны:</p> -->
+              <div class="phone_flex">
+              <a class="phone" href="tel:+375298148109"><img class="header_phone-img" src="img/phone.png" alt="Phone">+375(29)814-81-09</a>
+              <!-- <a class="phone" href="tel:+123456789"><img class="header_phone-img" src="img/phone.png" alt="Phone">+375(29)000-00-00</a> -->
+              </div>
+            </div>
+            <div class="message_flex">
+              <a href="https://www.instagram.com/fastmotors_mozyr"><img class="message" src="img/instagram.png" alt="Instagram"></a>
+              <a href="https://t.me/FASTMOTORS_Mozyr"><img class="message" src="img/telegram.png" alt="Telegram"></a>
+              <a href="viber://chat?number=%2B375298148109"><img class="message" src="img/viber.png" alt="Viber"></a>
+            </div>
+          </div>
+          <div class="header_address">
+            <p class="address"><span class="address-normal">г.Мозырь</p>
+            <!-- <p class="address"><span class="address-normal">Запись:</span> 11.00 - 21.00</p> -->
+            <p class="address"><span class="address-normal">СБ - ВС</span> 11.00 - 20.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav_wrap">
+        <a class="nav-menu_link"  active-color="rgb(226 110 38)" href="#motorcycles">Мотоциклы</a>
+        <a class="nav-menu_link"  active-color="rgb(226 110 38)" href="#equipment">Экипировка</a>
+        <a class="nav-menu_link" active-color="rgb(226 110 38)" href="#gift-certificate">Подарочный сертификат</a>
+        <a class="nav-menu_link" active-color="rgb(226 110 38)" href="#rental-conditions">Условия аренды</a>
+        <a class="nav-menu_link" active-color="rgb(226 110 38)" href="#about-us">Фото</a>
+        <a class="nav-menu_link" active-color="rgb(226 110 38)" href="#contacts">Контакты</a>
+        <span class="nav-indicator"></span>
+      </div>
+    </div>
+  </nav>  
+  <div class="popup" id="popup"></div>
+
+  <section class="content">
+    <p class="content_text-p">Прокат мотоциклов<br> ENDURO в <span class="title_orange">Мозыре</span></p>
+    <img class="content_text" src="img/text55.png" alt="">
+    
+      <!-- <div class="freepik">Изображение от <a href="https://ru.freepik.com/free-photo/full-shot-adult-with-equipment-riding-motorcycle_65544040.htm#fromView=search&page=4&position=9&uuid=25c61f3d-a497-4b3d-8797-8122a74b1032" >Freepik</a></div> -->
+
+    
+  </section>
+
+
+  <section id="motorcycles" class="motorcycles">
+    <div class="container">
+        <h2>Наши мотоциклы</h2>
+        <div class="motorcycle-list">
+            <div class="motorcycle-card">
+                <img src="img/progasi_palma_250.png" alt="PROGASI Palma 250">
+                <h3>PROGASI Palma 250</h3>
+                <p>Мощный и надежный партнер для покорения бездорожья. Идеален для сложных трасс.</p>
+                <span class="price">80 BYN / час</span>
+                <div class="button-container">
+                    <a href="#contacts" class="button">Забронировать</a>
+                </div>
+            </div>
+            <div class="motorcycle-card">
+                <img src="img/progasi_palma_300.png" alt="PROGASI Palma 300">
+                <h3>PROGASI Palma 300</h3>
+                <p>Легкий и маневренный, отлично подходит для динамичной езды по пересеченной местности.</p>
+                <span class="price">80 BYN / час</span>
+                <div class="button-container">
+                    <a href="#contacts" class="button">Забронировать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="equipment" class="equipment">
+  <div class="container">
+      <h2>Экипировка</h2>
+      <p>Для вашей безопасности и комфорта мы предоставляем:</p>
+      <div class="equipment-list">
+          <div class="equipment-item">
+              <img src="img/helmet.png" alt="Кроссовый мотошлем">
+              <h3>Кроссовый мотошлем</h3>
+              <p>Надежная защита головы во время поездки</p>
+          </div>
+          <div class="equipment-item">
+              <img src="img/body-armor.png" alt="Защита тела">
+              <h3>Мотожилет панцирь</h3>
+              <p>Мотожилет для защиты корпуса</p>
+          </div>
+          <div class="equipment-item">
+              <img src="img/gloves.png" alt="Мотоперчатки">
+              <h3>Мотоперчатки</h3>
+              <p>Обеспечивают отличное сцепление и защиту рук</p>
+          </div>
+          <div class="equipment-item">
+              <img src="img/body-armor_1.png" alt="Защита для тела">
+              <h3>Моточерепаха</h3>
+              <p>Моточерепаха для защиты корпуса</p>
+          </div>
+          <div class="equipment-item">
+              <img src="img/kneepads.png" alt="Наколенники и налокотники">
+              <h3>Наколенники и налокотники</h3>
+              <p>Дополнительная защита суставов</p>
+          </div>
+          <div class="equipment-item">
+              <img src="img/balaclava.png" alt="Подшлемник">
+              <h3>Балаклава</h3>
+              <p>Гигиенично и комфортно в любую погоду</p>
+          </div>
+      </div>
+      <p class="equipment-note">Экипировка предоставляется бесплатно при аренде мотоцикла</p>
+  </div>
+</section>
+
+<section id="gift-certificate" class="gift-certificate">
+  <div class="container">
+      <h2>Подарочный сертификат</h2>
+      <div class="gift-content">
+          <img src="img/gift-certificate.png" alt="Подарочный сертификат FASTMOTORS">
+          <div class="gift-text">
+              <p>Ищете идеальный подарок для любителя активного отдыха? Подарочный сертификат от FASTMOTORS - это отличная возможность подарить незабываемые эмоции и адреналин от катания на эндуро мотоциклах!</p>
+              <p>Сертификат может быть оформлен на определенное количество часов аренды.</p>
+              <a href="#contacts" class="button">Заказать сертификат</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- <section id="reviews" class="reviews">
+  <div class="container">
+      <h2>Фото</h2>
+      <div class="reviews-carousel">
+          <button class="carousel-button prev">❮</button>
+          <div class="carousel-track-container">
+              <ul class="carousel-track">
+                  <li class="carousel-slide"><img src="img/image1.jpg" alt="Отзыв 1"></li>
+                  <li class="carousel-slide"><img src="img/image2.jpg" alt="Отзыв 2"></li>
+                  <li class="carousel-slide"><img src="img/image3.jpg" alt="Отзыв 3"></li>
+                  <li class="carousel-slide"><img src="img/image4.jpg" alt="Отзыв 4"></li>
+                  <li class="carousel-slide"><img src="img/image5.jpg" alt="Отзыв 5"></li>
+              </ul>
+          </div>
+          <button class="carousel-button next">❯</button>
+      </div>
+  </div>
+</section> -->
+
+
+<section id="about-us" class="reviews">
+<button class="slider-button prev">&lt;</button>
+  <div class="slider-container">
+  <h2>Фото</h2>
+
+<div class="slider-track">
+<img src="img/image1.jpg" alt="Изображение 1">
+<img src="img/image2.jpg" alt="Изображение 2">
+<img src="img/image3.jpg" alt="Изображение 3">
+<img src="img/image4.jpg" alt="Изображение 4">
+<img src="img/image5.jpg" alt="Изображение 5">
+</div>
+<button class="slider-button next">&gt;</button>
+</div>
+</section>
+
+<section id="rental-conditions" class="rental-conditions">
+  <div class="container">
+      <h2>Условия аренды</h2>
+      <div class="rental-text">
+          <p>Для аренды мотоцикла вам необходимо иметь при себе паспорт или водительское удостоверение.</p>
+          <p>Возраст арендатора должен быть не менее 18 лет.</p>
+          <p>Перед началом поездки проводится обязательный инструктаж по технике безопасности и управлению мотоциклом.</p>
+          <p>Оплата производится перед началом аренды.</p>
+          <p>Арендатор несет ответственность за любые повреждения мотоцикла, возникшие по его вине.</p>
+          <p>Время аренды рассчитывается по часам.</p>
+          <p>Залог за мотоцикл не взимается.</p>
+          <p>При аренде мотоцикла предоставляется бесплатный комплект защитной экипировки.[1]</p>
+          <p>Передача мотоцикла третьим лицам запрещена.</p>
+          <p>Арендатор несет ответственность за соблюдение правил дорожного движения и техники безопасности во время поездки.</p>
+          <p>Полный текст условий аренды вы можете уточнить у нашего менеджера.</p>
+      </div>
+  </div>
+</section>
+
+  <!-- <section class="moto">
+    <div class="container">
+      <h1 class="moto_text">Мотоциклы</h1>
+      <div class="moto_grid">
+        <div class="glass">
+          <img class="moto_img" src="img/Screenshot_4.png" alt="PROGASI Palma 250">
+          <p class="moto_p"><span class="orange_color">PROGASI Palma 250 </span></p>
+          <p class="moto_p-title">Объем двигателя: 250 см3      Мощность: 23 л.с.</p>
+          <div class="card_price">
+            <p class="price_p">1 час - 80 BYN</p>
+          </div>
+        </div>
+        <div class="glass">
+          <img class="moto_img" src="img/Screenshot_2.png" alt="PROGASI Palma 250 SE">
+          <p class="moto_p"><span class="orange_color">PROGASI Palma 300 </span>с легкостью удовлетворит Ваши желания двигаться динамично по пересеченной местности или по бездорожью, ему под силу любая поверхность Земли.</p>
+          <div class="card_price">
+            <p class="price_p">1 час - 80 BYN</p>
+          </div>
+        </div>
+        <h2 class="moto_text">Амуниция</h2>
+        <div class="glass">
+          <img class="moto_img shlem" src="img/Screenshot_8.png" alt="Шлем">
+          <p class="moto_p"><span class="orange_color">Мотошлем кроссовый </span> защита для тела</p>
+          <div class="card_price">
+            <p class="price_p">беслатно <br><span class="price_p-only">(только с мотоциклом)</span></p>
+          </div>
+        </div>
+        <div class="glass">
+          <img class="moto_img shlem" src="img/Screenshot_3.png" alt="Защита">
+          <p class="moto_p"><span class="orange_color">Моточерепаха Turtle </span> защита для тела</p>
+          <div class="card_price">
+            <p class="price_p">беслатно <br><span class="price_p-only">(только с мотоциклом)</span></p>
+          </div>
+        </div>
+        <div class="glass">
+          <img class="moto_img shlem" src="img/Screenshot_7.png" alt="Защита">
+          <p class="moto_p"><span class="orange_color">Мотожилет панцирь </span> защита для тела</p>
+          <div class="card_price">
+            <p class="price_p">беслатно <br><span class="price_p-only">(только с мотоциклом)</span></p>
+          </div>
+        </div>
+        <div class="glass">
+          <img class="moto_img shlem" src="img/Screenshot_5.png" alt="Перчатки">
+          <p class="moto_p"><span class="orange_color">Мотоперчатки </span> защита для тела</p>
+          <div class="card_price">
+            <p class="price_p">беслатно <br><span class="price_p-only">(только с мотоциклом)</span></p>
+          </div>
+        </div>
+        <div class="glass">
+          <img class="moto_img shlem" src="img/Screenshot_6.png" alt="Балаклава">
+          <p class="moto_p"><span class="orange_color">Балаклава летняя </span> защита для тела</p>
+          <div class="card_price">
+            <p class="price_p">беслатно <br><span class="price_p-only">(только с мотоциклом)</span></p>
+          </div>
+        </div>
+        <div class="glass">
+          <img class="moto_img shlem" src="img/nakolen.png" alt="Наколенники">
+          <p class="moto_p"><span class="orange_color">Щитки наколенники и налокотники </span> защита для тела</p>
+          <div class="card_price">
+            <p class="price_p">беслатно <br><span class="price_p-only">(только с мотоциклом)</span></p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </section> -->
+
+  <footer  id="contacts" class="footer">
+    <div class="container">
+      <div class="footer_flex">
+      <div class="footer_logo">
+        <img class="logo" src="img/logo.png" alt="logo" >
+      </div>
+      
+      <div class="footer_phone-flex">
+        <div class="footer_phone">
+          <!-- <p class="phone_text phone_footer">Наши телефоны:</p> -->
+          <div class="phone_flex">
+            <a class="phone links-footer" href="tel:+375098148109"><img class="header_phone-img" src="img/phone.png" alt="Phone">+375(29)814-81-09</a>
+            <!-- <a class="phone" href="tel:+123456789"><img class="header_phone-img" src="img/phone.png" alt="Phone">+375(29)000-00-00</a> -->
+            </div>
+        </div>
+        </div>
+        <p class="address  address_footer">г.Мозырь</p>
+        <div class="footer_phone-flex">
+        <div class="message_flex message_footer">
+          <a href="https://www.instagram.com/fastmotors_mozyr"><img class="message footer_message" src="img/instagram.png" alt="Instagram"></a>
+          <a href="https://t.me/FASTMOTORS_Mozyr"><img class="message footer_message" src="img/telegram.png" alt="Telegram"></a>
+          <a href="viber://chat?number=%2B375298148109"><img class="message footer_message" src="img/viber.png" alt="Viber"></a>
+        </div>
+      </div>
+      </div>
+      <div class="hr hr1"></div>
+      <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9408.884274899318!2d29.240891348632812!3d52.048894700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734c1c9b9b9b9b9%3A0x5e0b5e0b5e0b5e0b!2z0JjRgNC90YHQvtCy0YHQutCw0Y8g0L_RgC4g0JrQuNC90YHQvtCy0YHQutCw0Y8!5e0!3m2!1sru!2sby!4v1704200000000!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9408.884274899318!2d29.240891348632812!3d52.048894700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734c1c9b9b9b9b9%3A0x5e0b5e0b5e0b5e0b!2z0JjRgNC90YHQvtCy0YHQutCw0Y8g0L_RgC4g0JrQuNC90YHQvtCy0YHQutCw0Y8!5e0!3m2!1sru!2sby!4v1704200000000!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        <!-- <p class="address footer_address-text first_child"><span class="address-normal address_footer">Запись:</span> 11.00 - 21.00</p> -->
+        <p class="address footer_address-text"><span class="address-normal address_footer">Режим работы: СБ - ВС</span> 11.00 - 20.00</p>
+    </div> 
+    <div class="hr"></div>
+    <div class="footer_copyrights">
+      <div class="container">
+        <div class="ofer">
+        <p class="footer_text-p">© 2024 FASTMOTORS</p>
+        <p class="footer_text-p">Информация предоставлена для ознакомления и не является публичной офертой</p>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
