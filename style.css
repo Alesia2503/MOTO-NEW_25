@@ -412,7 +412,7 @@ body {
 
 .rental-text {
   margin: 0 auto;
-  font-size: clamp(1rem, 1vw + 0.7rem, 2rem); 
+  font-size: clamp(0.8rem, 0.5vw + 1rem, 2rem); 
 }
 
 .rental-text p {
@@ -551,14 +551,17 @@ body {
   .button {
     font-size: 3vw;
   }
+  .equipment p {
+    font-size: 2.7vw;
+  }
   .equipment-item p {
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
   .gift-text p {
-    margin-bottom: 2vw;
+    margin-bottom: 2.3vw;
   }
   .gift-text {
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
   .rental-text p {
       margin-bottom: 2vw;
@@ -676,6 +679,31 @@ body {
   font-size: 2.5vw;
 }
 }
+
+@media (max-width:440px) { 
+.motorcycle-card p {
+  font-size: 3vw;
+}
+.button {
+  font-size: 4vw;
+}
+.equipment p {
+  font-size: 3vw;
+}
+.equipment-item p {
+  font-size: 3vw;
+}
+.gift-text p {
+  margin-bottom: 3vw;
+}
+.gift-text {
+  font-size: 3vw;
+}
+.rental-text p {
+    margin-bottom: 2vw;
+}   
+}
+
 
 @media (max-width:360px) { 
 
