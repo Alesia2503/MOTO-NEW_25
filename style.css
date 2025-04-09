@@ -684,27 +684,27 @@ body {
 }  
 }
 
-@media (max-width:440px) { 
+@media (max-width:460px) { 
 .motorcycle-card p {
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .button {
   font-size: 4vw;
 }
 .equipment p {
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .equipment-item p {
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .gift-text p {
-  margin-bottom: 3vw;
+  margin-bottom: 3.5vw;
 }
 .gift-text {
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .rental-text {
-  font-size: 3vw;  
+  font-size: 3.5vw;  
 }    
 }
 
