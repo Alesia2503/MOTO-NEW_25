@@ -24,19 +24,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
   margin: 0;
-  /* font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal; */
   font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-/* .bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} */
 
 .container {
   /* width: 1920px;
@@ -73,13 +64,6 @@ body {
   gap: 70px;
 }
 
-/* .phone_text {
-  font-size: 1.3vw;
-  font-weight: 400;
-  color: white;
-  padding-bottom: 10px;
-} */
-
 .phone_flex {
   display: flex;
   flex-direction: column;
@@ -93,19 +77,11 @@ body {
 }
 
 .phone, .address {
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-family: 'NewFont', Arial, sans-serif; */
-  /* font-family: 'Lato', sans-serif; */
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: 400;
   color: white;
 }
-
-/* .address.address-normal {
-  font-size: 1.5vw;
-  font-weight: 400;
-} */
 
 .header_phone-img {
   width: 2.5vw;
@@ -121,7 +97,7 @@ body {
 
 .message_flex {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 10px;
 }
 
@@ -137,12 +113,11 @@ body {
   border-top: 1px solid rgb(230 223 205);
   border-bottom: 1px solid rgb(230 223 205);
   position: sticky;
-    top: 0;
-    z-index: 100;
+  top: 0;
+  z-index: 100;
 }
 
 .nav_wrap {
-  /* padding: 10px 0 10px 0; */
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -153,7 +128,7 @@ body {
 .nav-menu_link {
   text-decoration: none;
   color: white;
-  font-size: 2vw;
+  font-size: 2.3vw;
   font-weight: 400;
   filter: saturate(200%);
 }
@@ -181,36 +156,16 @@ body {
   display: none;
 }
 
-/* .content {
-  width: 100%;
-  aspect-ratio: 20/15;
-  background: #000;
-  background-image: url(img/Mask.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  filter: saturate(150%);
-} */
-
 .content {
   width: 100%;
   aspect-ratio: 16/8;
   background: #000;
   background-image: url(img/Mask.webp);
   background-repeat: no-repeat;
-  /* Уменьшаем размер изображения */
-  background-size: 45vw auto; /* Ширина 300px, высота автоматически */
-  /* Позиционируем внизу слева с отступом */
-  background-position: left 0 bottom -1.9vw; /* Отступы 20px */
+  background-size: 45vw auto; 
+  background-position: left 0 bottom -1.9vw; 
   filter: saturate(150%);
-  /* Фиксируем блок на экране */
-  /* position: fixed;
-  left: 0;
-  bottom: 0; */
-  /* z-index: 1000; Чтобы контент был поверх других элементов */
   box-shadow: 0 50px 100px #950ebe33;
-  /* filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5)); */
-  
 }
 
 .content_text {
@@ -228,37 +183,35 @@ body {
   padding-right: 4vw;
   padding-top: 10vw;
   text-align: right;
-  color: #ff6b6b; /* Цвет для браузеров без поддержки */
+  color: #ff6b6b; 
   background: linear-gradient(to right, #ff9800, #9400D3, #ff9800);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-
-
 /* Motorcycles Section Styles */
 .motorcycles {
   padding: 3vw 0;
   background-color: #333;
   color: #eee;
-  }
-  
-  .motorcycles h2 {
+}
+
+.motorcycles h2 {
   font-size: 7vw;
   text-align: center;
   margin-bottom: 3vw;
   font-weight: 400;
   color: rgb(255 54 0); /* Bright orange */
-  }
-  
-  .motorcycle-list {
+}
+
+.motorcycle-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1.5rem;
-  }
-  
-  .motorcycle-card {
+}
+
+.motorcycle-card {
   background-color: #222;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -267,141 +220,137 @@ body {
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   padding-bottom: 1rem;
-  }
-  
-  .motorcycle-card:hover {
+}
+
+.motorcycle-card:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 10px 30px #950ebe33;
-  }
-  
-  .motorcycle-card img {
+}
+
+.motorcycle-card img {
   width: 80%;
   display: block;
   border-bottom: 0.1rem solid #444;
   margin: 1vw auto 0;
-  }
-  
-  .motorcycle-card h3 {
+}
+
+.motorcycle-card h3 {
   font-size: 5vw;
   margin: 2vw 0 1vw;
   font-weight: 400;
-  color: rgb(255 54 0) /* Bright orange */
-  }
-  
-  .motorcycle-card p {
-    font-family: 'Montserrat', sans-serif;
+  color: rgb(255 54 0);
+}
+
+.motorcycle-card p {
+  font-family: 'Montserrat', sans-serif;
   padding: 0 2vw;
   margin-bottom: 1.2vw;
-  font-size: 2.5vw;
+  font-size: 1.2vw;
   font-weight: 400;
-  }
-  
-  .motorcycle-card .price {
+}
+
+.motorcycle-card .price {
   font-size: 4vw;
   font-weight: 400;
-  color: #ffffff; /* Purple */
-  /* margin-bottom: 3vw; */
-  }
-  
-  .button-container {
+  color: #ffffff; 
+}
+
+.button-container {
   padding: 1vw 1vw 0;
-  }
-
-
+}
 
 /* Button Styles */
 .button {
   display: inline-block;
-  background-color: rgb(255 54 0); /* Bright orange */
+  background-color: rgb(255 54 0); 
   color: #fff;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
   border-radius: 0.3rem;
+  font-size: 1.5vw;
   font-weight: 400;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(to right, #ff9800, #9400D3, #ff9800);
   background-size: 200% auto;
   animation: gradient-animation 2s infinite alternate;
-  }
-  
-  @keyframes gradient-animation {
+}
+
+@keyframes gradient-animation {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
-  
+}
+
 /* Equipment Section Styles */
 .equipment {
   padding: 2.5vw 0;
-  background-color: #ffffff; /* Purple background */
+  background-color: #ffffff; 
   color: #000000;
   font-weight: 400;
-  }
-  
-  .equipment h2 {
+}
+
+.equipment h2 {
   font-size: 7vw;
   text-align: center;
   font-weight: 400;
   margin-bottom: 1vw;
-  color: rgb(255 54 0); /* Bright orange */
-  }
-  
-  .equipment p {
-    font-family: 'Montserrat', sans-serif;
+  color: rgb(255 54 0); /
+}
+
+.equipment p {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin-bottom: 1.5vw;
-  font-size: 3.5vw;
+  font-size: 2vw;
   font-weight: 400;
-  }
-  
-  .equipment-list {
+}
+
+.equipment-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2vw;
   text-align: center;
-  }
-  
-  .equipment-item {
+}
+
+.equipment-item {
   background-color: #333;
   padding: 2vw;
   border-radius: 1.5vw;
   /* box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); */
   box-shadow: 0 10px 30px #950ebe33;
-  }
-  
-  .equipment-item img {
+}
+
+.equipment-item img {
   width: 40vw;
   height: 22vw;
-  /* margin-bottom: 0.7vw; */
   object-fit: contain;
   margin: 0 auto;
-  }
-  
-  .equipment-item h3 {
+}
+
+.equipment-item h3 {
   font-size: 4vw;
   margin-bottom: 0.7vw;
-  color: rgb(255 54 0); /* Bright orange */
+  color: rgb(255 54 0); 
   font-weight: 400;
-  }
-  
-  .equipment-item p {
-  font-size: 2.5vw;
+}
+
+.equipment-item p {
+  font-size: 1.3vw;
   margin-bottom: 0vw;
   color: #ffffff;
-  }
-  
-  .equipment-note {
+}
+
+.equipment-note {
   text-align: center;
   margin-top: 2.5vw;
   font-style: italic;
   color: #5b5454;
-  /* font-size: 1vw; */
   }
 
 /* Gift Certificate Section Styles */
@@ -409,342 +358,87 @@ body {
   padding: 2vw 0;
   background-color: #333;
   color: #eee;
-  }
-  
-  .gift-certificate h2 {
+}
+
+.gift-certificate h2 {
   font-size: 7vw;
   text-align: center;
   font-weight: 400;
   margin-bottom: 1vw;
-  color: rgb(255 54 0); /* Bright orange */
-  }
-  
-  .gift-content {
+  color: rgb(255 54 0); 
+}
+
+.gift-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3vw;
-  }
-  
-  .gift-content img {
+}
+
+.gift-content img {
   max-width: 40%;
   height: auto;
   border-radius: 1vw;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
   /* box-shadow: 0 10px 30px #950ebe33; */
-  }
-  
-  .gift-text {
+}
+
+.gift-text {
   max-width: 60%;
-  font-size: 2.5vw;
+  font-size: 1.4vw;
   font-weight: 400;
-  }
-  
-  .gift-text p {
-    font-family: 'Montserrat', sans-serif;
+}
+
+.gift-text p {
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 1.5vw;
   font-weight: 400;
-  }
-
-/* Reviews Section Styles */
-.reviews {
-  padding: 2vw 0;
-  background-color: #857f7f;
-  color: #eee;
-  }
-  
-  /* .reviews h2 {
-  font-size: 5vw;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 1vw;
-  color: #ff9800; 
-  } */
-  /* .reviews-carousel {
-  position: relative;
-  max-width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
-  } */
-  
-  /* .carousel-track-container {
-  overflow: hidden;
-  } */
-  
-  /* .carousel-track {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  transition: transform 0.3s ease-in-out;
-  } */
-  
-  /* .carousel-slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 1rem;
-  text-align: center;
-  } */
-  
-  /* .carousel-slide img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-  margin: 0 auto;
-  } */
-  
-  /* .carousel-button {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 3vw;
-  color: #ff9800; 
-  cursor: pointer;
-  padding: 1vw;
-  z-index: 1;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-  } */
-  
-  /* .carousel-button:hover {
-  opacity: 1;
-  }
-   */
-  /* .carousel-button.prev {
-  left: 1.2vw;
-  }
-   */
-  /* .carousel-button.next {
-  right: 1.1vw;
-  }
-   */
-
-
-
-
-
-
-.reviews {
-  position: relative;
 }
-  .slider-container {
-    /* position: relative; */
-    max-width: 500px; /* Задайте желаемую ширину слайдера */
-    height: 430px; /* Задайте желаемую высоту слайдера */
-    overflow: hidden;
-    margin: 0 auto;
-    }
-    
-    .reviews h2 {
-      font-size: 5vw;
-      font-weight: 400;
-      text-align: center;
-      margin-bottom: 1vw;
-      color: rgb(255 54 0); 
-    }
-
-    .slider-track {
-    display: flex;
-    max-width: calc(500px * 5); /* Умножьте ширину на количество изображений */
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-    }
-    
-    .slider-track img {
-    width: 500px;
-    /* height: 400px; */
-    object-fit: cover;
-
-    /* max-width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-    margin: 0 auto; */
-    }
-    
-    .slider-button {
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 2em;
-    color: rgb(255 54 0); 
-    cursor: pointer;
-    outline: none;
-    padding: 10px;
-    z-index: 1;
-    opacity: 0.7;
-  transition: opacity 0.3s ease;
-    }
-    .slider-button:hover {
-      opacity: 1;
-      }
-    .slider-button.prev {
-    left: 35vw;
-    }
-    
-    .slider-button.next {
-    right: 35vw;
-    }
-
-
 
 /* Rental Conditions Section Styles */
 .rental-conditions {
   padding: 2vw 0;
   background-color: #ffffff;
   color: #000000;
-  }
-  
-  .rental-conditions h2 {
+}
+
+.rental-conditions h2 {
   font-size: 7vw;
   font-weight: 400;
   text-align: center;
   margin-bottom: 2rem;
-  color: rgb(255 54 0); /* Bright orange */
-  }
-  
-  .rental-text {
-  /* max-width: 800px; */
+  color: rgb(255 54 0); 
+}
+
+.rental-text {
   margin: 0 auto;
-  font-size: 2.5vw;
-  }
-  
-  .rental-text p {
-    font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+}
+
+.rental-text p {
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 1rem;
   font-weight: 400;
-  }   
+}   
 
-  .maps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-    gap: 1rem;
-    }
-    
-    .maps iframe {
-    width: 100%;
-    height: 18rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
-    }  
-
-.moto {
-  /* background: #9b8678;
-  background: linear-gradient(179deg, #9b8678 24%, #6480a7 100%) */
-  background: #ffffff;
-  /* background: linear-gradient(179deg, #000000 24%, #1daa04 24%) */
-}
-
-.moto_text, .content_moto-h1 {
-  text-align: center;
-  font-size: 4vw;
-  color: rgb(255 54 0);
-  filter: saturate(200%);
-  padding-top: 10px;
-  padding-bottom: 3%;
-}
-
-.moto_grid {
-  display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-  row-gap: 20%;
-  padding: 0 20px 10% 20px;
-}
-
-.glass {
-  width: 85%;
-  max-width: 2000px;
-  aspect-ratio: 14/5;
-  background: rgb(227 221 205);
-  border-radius: 35px;
-  margin: 15% auto 5%;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-.moto_img {
-  width: 50%;
-  height: auto;
-  position: relative;
-  top: -30%;
-  left: 25%;
-  right: 0;
-  bottom: 0;
-  filter: drop-shadow(0 0 10px black);
-  animation: 1500ms ease-out 0s 1 normal none running jne; 
-  transition-duration: 1s;
-  -webkit-box-reflect:
-  below
-  0px
-  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-}
-
-.moto_img:hover {
-  top: -40%;
-  transition-duration: 1s;
-}
-
-.moto_img.shlem {
-  width: 30%;
-  left: 35%;
-}
-
-.moto_img.shlem1 {
-  width: 40%;
-  left: 35%;
-}
-
-.moto_p {
-  padding: 0px 50px 10px 50px;
-  margin-top: -12%;
-  font-size: 1.5vw;
-  text-align: center;
-}
-
-.moto_p-title {
-  font-family: "Oswald", sans-serif;
-  
-  padding: 0px 50px 25px 50px;
-  /* font-size: 1.5vw; */
-  text-align: center;
-}
-
-.orange_color {
-  font-size: 2.5vw;
-  color: rgb(255 54 0);
-  filter: saturate(200%);
-}
-
-.card_price {
-  width: 30%;
-  background: rgb(255 54 0);
-  filter: saturate(200%);
-  border-radius: 20px;
-  padding: 10px;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  margin-bottom: 5%;
-}
-
-.price_p {
-  font-size: 2vw;
-  font-weight: bold;
-}
-
-.price_p-only {
-  font-size: 1.5vw;
-}
-
+/* Footer*/
 .footer {
   background: black;
+  padding-top: 3vw;
 }
+
+.maps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 1rem;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 18rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+} 
 
 .footer_flex {
   display: flex;
@@ -754,25 +448,25 @@ body {
 }
 
 .footer_address-text {
-  padding-top: 5px;
-  font-size: 3vw;
+  padding: 0.5vw 0 0.5vw 0;
+  font-size: 2vw;
   text-align: center;
 }
 
 .footer_phone-flex {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 .message_footer {
   width: 30vw;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 }
 
 .address_footer {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .phone_footer {
@@ -780,22 +474,22 @@ body {
 }
 
 .links-footer {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
-.footer_bron {
+/* .footer_bron {
   justify-content: center;
-}
+} */
 
 .hr {
   border-bottom: 1px solid rgb(227 221 205);
-  padding: 2vw 0 0vw 0;
-  margin-bottom: 2vw;
+  /* padding: 2vw 0 0vw 0; */
+  /* margin-bottom: 2vw; */
 }
 
-.first_child {
+/* .first_child {
   padding: 2vw 0 0 0;
-}
+} */
 
 .footer_message {
   width: 3.5vw;
@@ -807,6 +501,7 @@ body {
 }
 
 .footer_text-p {
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 1.3vw;
 }
@@ -816,298 +511,37 @@ body {
   justify-content: space-between;
 }
 
-/*Условия аренды*/
-.rent_content {
-  background: #9b8678;
-  background: linear-gradient(179deg, #9b8678 24%, #6480a7 100%);
-  padding: 30px 0 30px 0;
-}
-
-.rent_content li, .rent_content p {
-  text-align: justify;
-  font-size: 1.5vw;
-}
-
-.rent_h1 {
-  font-size: 2vw;
-}
-
-.last_h1 {
-  margin-top: 16px;
-}
-
-ul .li {
-  list-style: '✔ ';
-}
-
-/*Мотоциклы*/
-.content_moto {
-  background: #9b8678;
-  background: linear-gradient(179deg, #9b8678 24%, #6480a7 100%);
-}
-
-.content_moto-h1 {
-  text-align: center;
-  font-size: 4vw;
-  color: rgb(255 54 0);
-  padding-bottom: 3%;
-  padding-top: 3%;
-}
-
-.cards_wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 5%;
-  padding-bottom: 5%;
-}
-
-.moto_img1 {
-  width: 50%;
-  margin: 0 auto;
-  filter: drop-shadow(0 0 10px black);
-  animation: 1500ms ease-out 0s 1 normal none running jne; 
-  transition-duration: 1s;
-  -webkit-box-reflect:
-  below
-  0px
-  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-}
-
-.card_text-title {
-  font-size: 2.5vw;
-}
-
-.card_text-p {
-  font-size: 1.5vw;
-  margin-bottom: 1%;
-  text-align: justify;
-}
-
-
-/*О нас*/
-.content_about {
-  background: #9b8678;
-  background: linear-gradient(179deg, #9b8678 24%, #6480a7 100%);
-}
-
-.scroller {
-  max-width: 100%;
-}
-
-.scroller__inner {
-  padding-block: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.scroll_img {
-  width: 100%;
-  max-width: 400px;
-  aspect-ratio: 9/6.5;
-  border-radius: 15px;
-  filter: saturate(150%);
-}
-
-.scroller[data-animated="true"] {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scroller[data-animated="true"] .scroller__inner {
-  width: max-content;
-  flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
-}
-
-.scroller[data-direction="right"] {
-  --_animation-direction: reverse;
-}
-
-.scroller[data-direction="left"] {
-  --_animation-direction: forwards;
-}
-
-.scroller[data-speed="fast"] {
-  --_animation-duration: 100s;
-}
-
-.scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
-}
-
-@keyframes scroll {
-  to {
-    transform: translate(calc(-50% - 0.5rem));
-  }
-}
-
-.scroll_logo {
-  width: 100%;
-  max-width: 100px;
-  aspect-ratio: 16/9;
-}
-
-.tag-list {
-  margin: 0;
-  padding-inline: 0;
-  list-style: none;
-}
-
-.odd{
-  filter: invert(1);
-}
-
-.tag-list li {
-  padding: 1rem;
-  background: black;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
-}
-
-li.even {
-  background: white;
-}
-
-.about_h1 {
-  font-size: 2vw;
-  text-align: center;
-  padding-bottom: 1.5%;
-  padding-top: 3%;
-}
-
-.about_p {
-  text-indent: 2vw;
-  font-size: 1.5vw;
-  text-align: justify;
-}
-
-.slider {
-  width: 70%;
-  height: auto;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.middle {
-  margin: 2vw 0 0 15%;
-}
-
-.navigation {
-  justify-content: center;
-  padding-top: 1vw;
-  display: flex;
-}
-
-.bar1 {
-  width: 50px;
-  height: 8px;
-  margin: 20px;
-  cursor: pointer;
-  background-color: #000;
-  opacity: .5;
-  border-radius: 10px;
-  transition: all 0.4s ease;
-}
-
-.bar1:hover {
-  opacity: 1;
-  transform:scale(1.1);
-}
-
-input[name="r"] {
-  position: absolute;
-  visibility: hidden;
-}
-
-.slides {
-  width: 400%;
-  height: 100%;
-  display: flex;
-}
-
-.slide {
-  width: 25%;
-  transition: all 0.6s ease;
-}
-
-#r1:checked ~ .s1 {
-  margin-left: 0;
-}
-
-#r2:checked ~ .s1 {
-  margin-left: -25%;
-}
-
-#r3:checked ~ .s1 {
-  margin-left: -50%;
-}
-
-#r4:checked ~ .s1 {
-  margin-left: -75%;
-}
-
-.video {
-  width: 100%;
-  height: 100%;
-}
-
-.about_grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-  gap: 2vw;
-  padding: 5% 0 5% 0;
-}
-
-.about_img {
-  width: 100%;
-  filter: saturate(150%);
-}
-
-.button_more {
-  background-color: transparent;
-  border: none;
-}
-
-.more {
-  filter: grayscale(200%);
-}
-
-
-
 @media (max-width:1155px) {
-.equipment-list {
-  grid-template-columns: repeat(3, 1fr);
+  .equipment-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width:1105px) {
   .equipment-list {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    }
   }
+}
+
 @media (max-width:1100px) {
-  .freepik {
-    top: 54%;
-  }
   .footer_message {
     font-size: 5vw;
   }
 }
 
-@media (max-width:850px) {
-  .header_phone-img {
-    margin: -4px 5px 0 0;
-  }
+@media (max-width:800px) {
+.gift-content {
+  flex-direction: column;
 }
+.gift-content img {
+  max-width: 80%;
+}
+.gift-text {
+  max-width: 100%;
+  text-align: center;
+}
+}
+
 
 @media (max-width:600px) {
   .container {
@@ -1130,7 +564,6 @@ input[name="r"] {
     align-items: center;
   }
   .hamb__field {
-    /* padding: 10px 20px 10px 0; */
     cursor: pointer;
   }
   .header_logo {
@@ -1193,38 +626,7 @@ input[name="r"] {
   body.noscroll {
     overflow: hidden;
   }
-  .card_price {
-    width: 40%;
-    border-radius: 12px;
-  }
-  .glass {
-    width: 100%;
-    aspect-ratio: 14/3;
-  }
-  .rent_content li, .rent_content p {
-    font-size: 2.5vw;
-  }
-  .rent_h1 {
-    font-size: 4vw;
-  }
-  .card_text-title {
-    font-size: 3vw;
-  }
-  .card_text-p {
-    font-size: 2.5vw;
-  }
-  .about_h1 {
-    font-size: 4vw;
-  }
-  .about_p {
-    font-size: 2.5vw;
-  }
-  .moto_p {
-    font-size: 2.5vw;
-  }
-  .orange_color {
-    font-size: 3vw;
-  }
+  
   .header_phone-img {
     width: 3vw;
     height: 3vw;
@@ -1233,99 +635,50 @@ input[name="r"] {
     width: 5vw;
     height: 5vw;
   }
-  .scroll_img {
-    width: 40%;
-    max-width: 200px;
-  }
-  .middle {
-    margin: 2vw 0 0 0;
-  }
-  .slider {
-    width: 100%;
-  }
-  .bar1 {
-    margin: 15px;
-  }
 
-  /* .equipment-list {
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    } */
-
-    .gift-content {
-   flex-direction: column;
-      }
-      
-      .gift-content img {
-      max-width: 80%;
-      /* height: auto;
-      border-radius: 1vw;
-      box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3); */
-      }
-      .gift-text {
-       max-width: 80%;
-       text-align: center;
-      }
-}
-
-@media (max-width:710px) {
-  .message_flex {
-    gap: 10px;
-  }
-  .moto_p {
-    padding: 0 20px 20px 20px;
-  }
-  .freepik {
-    font-size: 1.5vw;
+  .phone, .address, .motorcycle-card p, .equipment p, .equipment-item p, .gift-text p, .gift-text, .rental-text, .links-footer, .address_footer {
+    font-size: 2.5vw;
   }
 }
 
 @media (max-width:640px) { 
-  /* .nav {
-    padding: 20px 20px 20px 20px;
-  } */
-  .about_grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .equipment-list {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    }
+  }
+  .maps {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
 }
 
-/* @media (max-width:590px) { 
-  .popup {
-    top: 55px;}
-} */
-
 @media (max-width:300px) { 
- .motorcycle-list {
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  .motorcycle-list {
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   }
   .equipment-list {
     grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-}
+  }
 }
 
 @media (max-width:200px) { 
   .motorcycle-list {
-   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-   }
- }
- 
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  }
+}
+
 
 /* Disable hover effects on touch devices */
 @media (hover: none) {
   .button:hover {
-  transform: none;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    transform: none;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
   }
   
   .motorcycle-card:hover {
-  transform: none;
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    transform: none;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
   }
   
   .about-gallery img:hover {
-  transform: none;
+    transform: none;
   }
-  }
+}
