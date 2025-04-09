@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Bebas'; /* Придумайте название для вашего шрифта */
+  font-family: 'Bebas'; 
   src: url('Fonts/Bebas Neue Cyrillic.ttf') format('woff2');
-  font-weight: 400; /* Укажите нормальную толщину шрифта (normal, bold, 400, 700 и т.д.) */
-  font-style: normal; /* Укажите нормальное начертание шрифта (normal, italic) */
+  font-weight: 400; 
+  font-style: normal; 
   }
 html {
   box-sizing: border-box;
@@ -93,7 +93,11 @@ body {
 }
 
 .phone, .address {
-  font-size: 3vw;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'NewFont', Arial, sans-serif; */
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5vw;
   font-weight: 400;
   color: white;
 }
@@ -204,7 +208,7 @@ body {
   left: 0;
   bottom: 0; */
   /* z-index: 1000; Чтобы контент был поверх других элементов */
-  box-shadow: 0 10px 30px rgba(216, 19, 19, 0.2);
+  box-shadow: 0 50px 100px #950ebe33;
   /* filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5)); */
   
 }
@@ -259,7 +263,7 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 10px 30px rgba(255, 253, 253, 0.2);
+  box-shadow: 0 10px 30px #950ebe33;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   padding-bottom: 1rem;
@@ -268,7 +272,7 @@ body {
   .motorcycle-card:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px #950ebe33;
   }
   
   .motorcycle-card img {
@@ -286,6 +290,7 @@ body {
   }
   
   .motorcycle-card p {
+    font-family: 'Montserrat', sans-serif;
   padding: 0 2vw;
   margin-bottom: 1.2vw;
   font-size: 2.5vw;
@@ -1102,6 +1107,9 @@ input[name="r"] {
 @media (max-width:600px) {
   .container {
     padding: 0 20px 0 20px;
+  }
+  .header {
+    border-bottom: 1px solid rgb(230 223 205);
   }
   .header_number {
     display: none;
