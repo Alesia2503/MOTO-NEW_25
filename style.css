@@ -207,7 +207,7 @@ body {
 
 .motorcycle-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -265,10 +265,10 @@ body {
   display: inline-block;
   background-color: rgb(255 54 0); 
   color: #fff;
-  padding: 0.8rem 1.5rem;
+  padding: 1.1vw 1.5vw;
   text-decoration: none;
-  border-radius: 0.3rem;
-  font-size: 1.5vw;
+  border-radius: 0.7vw;
+  font-size: 2vw;
   font-weight: 400;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
@@ -313,7 +313,7 @@ body {
 
 .equipment-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   gap: 2vw;
   text-align: center;
 }
@@ -412,7 +412,7 @@ body {
 
 .rental-text {
   margin: 0 auto;
-  font-size: 1.5vw;
+  font-size: clamp(1rem, 1vw + 0.7rem, 2rem); 
 }
 
 .rental-text p {
@@ -421,6 +421,9 @@ body {
   font-weight: 400;
 }   
 
+.rental-conditions .rental_min {
+  font-size: 5vw;
+}
 /* Footer*/
 .footer {
   background: black;
@@ -541,7 +544,34 @@ body {
   text-align: center;
 }
 }
-
+@media (max-width:743.5px) {
+  .motorcycle-card p {
+    font-size: 2.3vw;
+  }
+  .button {
+    font-size: 3vw;
+  }
+  .equipment-item p {
+    font-size: 2vw;
+  }
+  .gift-text p {
+    margin-bottom: 2vw;
+  }
+  .gift-text {
+    font-size: 2vw;
+  }
+  .rental-text p {
+      margin-bottom: 2vw;
+  }   
+}
+@media (max-width:640px) { 
+  .equipment-list {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .maps {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
 
 @media (max-width:600px) {
   .container {
@@ -636,28 +666,29 @@ body {
     height: 5vw;
   }
 
-  .phone, .address, .motorcycle-card p, .equipment p, .equipment-item p, .gift-text p, .gift-text, .rental-text, .links-footer, .address_footer {
+  /* .phone, .address, .motorcycle-card p, .equipment p, .equipment-item p, .gift-text p, .gift-text, .rental-text, .links-footer, .address_footer {
     font-size: 2.5vw;
-  }
+  } */
 }
 
-@media (max-width:640px) { 
-  .equipment-list {
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  }
-  .maps {
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  }
+@media (max-width:530.5px) { 
+.equipment-item p {
+  font-size: 2.5vw;
+}
 }
 
-@media (max-width:300px) { 
+@media (max-width:360px) { 
+
   .motorcycle-list {
-    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-  }
-  .equipment-list {
-    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   }
 }
+@media (max-width:280px) { 
+ .equipment-list {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  } 
+} 
+
 
 @media (max-width:200px) { 
   .motorcycle-list {
