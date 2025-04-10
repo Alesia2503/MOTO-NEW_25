@@ -708,6 +708,11 @@ body {
 .rental-text {
   font-size: 2.5vw;  
 }  
+.footer_flex {
+  flex-direction: column;
+  gap: 1vw;
+  padding: 2vw 0 2vw 0;
+}
 }
 
 @media (max-width:460px) { 
