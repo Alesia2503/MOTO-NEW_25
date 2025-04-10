@@ -93,7 +93,7 @@ body {
 
 .message_flex {
   display: flex;
-  gap: 1vw;
+  gap: 3vw;
 }
 
 .message {
@@ -469,7 +469,7 @@ body {
 }
 .footer_phone-flex_1 {
   display: flex;
-  width: 17vw;
+  width: 25vw;
   align-items: center;
 }
 .message_footer {
