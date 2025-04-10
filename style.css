@@ -30,10 +30,6 @@ body {
 }
 
 .container {
-  /* width: 1920px;
-  margin: auto;
-  width: 100%;
-  padding: 0 50px 0 50px; */
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 40px;
@@ -97,7 +93,6 @@ body {
 
 .message_flex {
   display: flex;
-  /* justify-content: space-between; */
   gap: 1vw;
 }
 
@@ -247,7 +242,6 @@ body {
   padding: 0 2vw;
   margin-bottom: 1.2vw;
   font-size: 1.2vw;
-  /* font-size: clamp(14px, 3vw, 24px);  */
   font-weight: 400;
 }
 
@@ -309,7 +303,6 @@ body {
   text-align: center;
   margin-bottom: 2vw;
   font-size: 2vw;
-  /* font-size: clamp(14px, 3vw, 24px);  */
   font-weight: 400;
 }
 
@@ -344,7 +337,6 @@ body {
 
 .equipment-item p {
   font-size: 1.3vw;
-  /* font-size: clamp(14px, 3vw, 24px);  */
   margin-bottom: 0vw;
   color: #ffffff;
 }
@@ -389,7 +381,6 @@ body {
 .gift-text {
   max-width: 60%;
   font-size: 1.4vw;
-  /* font-size: clamp(12px, 4vw, 24px);  */
   font-weight: 400;
 }
 
@@ -415,19 +406,10 @@ body {
 }
 
 .rental-text {
-  /* margin: 0 auto; */
   font-weight: 400;
-  /* font-size: clamp(0.8rem, 0.5vw + 1rem, 2rem); */
-
   font-size: 1.5vw; 
-  /* font-size: clamp(14px, 3vw, 24px);  */
 }
-/* .rental-text ul .li {
-  list-style: '✔ ';
-}
-.rental-text ul {
-  padding: 0 0 0 20px;
-} */
+
 .rental-text p {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1rem;
@@ -471,13 +453,11 @@ body {
 
 .footer_phone-flex {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 .footer_phone-flex_1 {
   display: flex;
   width: 17vw;
-  /* justify-content: space-between; */
   align-items: center;
 }
 .message_footer {
@@ -498,19 +478,9 @@ body {
   font-size: 2vw;
 }
 
-/* .footer_bron {
-  justify-content: center;
-} */
-
 .hr {
   border-bottom: 1px solid rgb(227 221 205);
-  /* padding: 2vw 0 0vw 0; */
-  /* margin-bottom: 2vw; */
 }
-
-/* .first_child {
-  padding: 2vw 0 0 0;
-} */
 
 .footer_message {
   width: 3.5vw;
@@ -524,7 +494,7 @@ body {
 .footer_text-p {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  font-size: 0.4vw;
+  font-size: 1vw;
 }
 
 .ofer {
@@ -695,10 +665,6 @@ body {
     width: 5vw;
     height: 5vw;
   }
-
-  /* .phone, .address, .motorcycle-card p, .equipment p, .equipment-item p, .gift-text p, .gift-text, .rental-text, .links-footer, .address_footer {
-    font-size: 2.5vw;
-  } */
 }
 
 @media (max-width:530.5px) { 
@@ -712,6 +678,23 @@ body {
   flex-direction: column;
   gap: 1vw;
   padding: 2vw 0 2vw 0;
+}
+.links-footer {
+  font-size: 3vw;
+}  
+.address_footer {
+  font-size: 3vw;
+}
+.footer_address-text {
+  font-size: 3vw;
+}  
+.message_flex {
+  justify-content: space-between;
+  
+}
+.footer_phone-flex_1 {
+  width: 50vw;
+  justify-content: space-evenly;
 }
 }
 
@@ -739,15 +722,6 @@ body {
 } 
  .rental-text {
   font-size: 3.5vw;  
-}  
-.links-footer {
-  font-size: 2.5vw;
-}  
-.address_footer {
-  font-size: 2.5vw;
-}
-.footer_address-text {
-  font-size: 2.5vw;
 }  
 }
 
