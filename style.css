@@ -437,6 +437,13 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 } 
+.maps_h {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1vw;
+}
 
 .footer_flex {
   display: flex;
@@ -561,6 +568,9 @@ body {
     font-size: 2.3vw;
   }
   .footer_address-text {
+    font-size: 2.3vw;
+  }
+  .maps_h {
     font-size: 2.3vw;
   }
 }
@@ -688,6 +698,9 @@ body {
 .footer_address-text {
   font-size: 4vw;
 }  
+.maps_h {
+  font-size: 4vw;
+}
 .message_flex {
   justify-content: space-between;
   
@@ -730,6 +743,9 @@ body {
  .rental-text {
   font-size: 3.5vw;  
 }  
+.maps_h {
+  font-size: 3.5vw;
+}
 }
 
 
@@ -748,6 +764,9 @@ body {
     height: 50vw;
     box-shadow: 0 0.1rem 0.3rem #950ebe33;
   } 
+  .maps {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
 } 
 
 
