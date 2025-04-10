@@ -680,21 +680,28 @@ body {
   padding: 2vw 0 2vw 0;
 }
 .links-footer {
-  font-size: 3vw;
+  font-size: 4vw;
 }  
 .address_footer {
-  font-size: 3vw;
+  font-size: 4vw;
 }
 .footer_address-text {
-  font-size: 3vw;
+  font-size: 4vw;
 }  
 .message_flex {
   justify-content: space-between;
   
 }
+.message_footer {
+  width: 50vw;
+}
 .footer_phone-flex_1 {
   width: 50vw;
   justify-content: space-evenly;
+}
+.message {
+  width: 7vw;
+  height: 7vw;
 }
 }
 
