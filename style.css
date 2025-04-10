@@ -237,6 +237,11 @@ body {
   color: rgb(255 54 0);
 }
 
+.moto_flex {
+  display: flex;
+  justify-content: space-around;
+}
+
 .motorcycle-card p {
   font-family: 'Montserrat', sans-serif;
   padding: 0 2vw;
@@ -745,6 +750,9 @@ body {
 }  
 .maps_h {
   font-size: 3.5vw;
+}
+.moto_flex p {
+  font-size: 3vw;
 }
 }
 
