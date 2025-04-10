@@ -88,7 +88,7 @@ body {
   height: 2.5vw;
   display: inline;
   vertical-align: middle;
-  margin: -8px 10px 0 0;
+  margin: -0.3vw 0.3vw 0 0;
 }
 
 .header_address {
@@ -98,7 +98,7 @@ body {
 .message_flex {
   display: flex;
   /* justify-content: space-between; */
-  gap: 10px;
+  gap: 1vw;
 }
 
 .message {
@@ -192,7 +192,7 @@ body {
 
 /* Motorcycles Section Styles */
 .motorcycles {
-  padding: 3vw 0;
+  padding: 6vw 0;
   background-color: #333;
   color: #eee;
 }
@@ -200,9 +200,9 @@ body {
 .motorcycles h2 {
   font-size: 7vw;
   text-align: center;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
   font-weight: 400;
-  color: rgb(255 54 0); /* Bright orange */
+  color: rgb(255 54 0); 
 }
 
 .motorcycle-list {
@@ -247,6 +247,7 @@ body {
   padding: 0 2vw;
   margin-bottom: 1.2vw;
   font-size: 1.2vw;
+  /* font-size: clamp(14px, 3vw, 24px);  */
   font-weight: 400;
 }
 
@@ -289,7 +290,7 @@ body {
 
 /* Equipment Section Styles */
 .equipment {
-  padding: 2.5vw 0;
+  padding: 6vw 0;
   background-color: #ffffff; 
   color: #000000;
   font-weight: 400;
@@ -299,15 +300,16 @@ body {
   font-size: 7vw;
   text-align: center;
   font-weight: 400;
-  margin-bottom: 1vw;
+  margin-bottom: 1.5vw;
   color: rgb(255 54 0); /
 }
 
 .equipment p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin-bottom: 1.5vw;
+  margin-bottom: 2vw;
   font-size: 2vw;
+  /* font-size: clamp(14px, 3vw, 24px);  */
   font-weight: 400;
 }
 
@@ -335,13 +337,14 @@ body {
 
 .equipment-item h3 {
   font-size: 4vw;
-  margin-bottom: 0.7vw;
+  margin: 2vw 0 1vw 0;
   color: rgb(255 54 0); 
   font-weight: 400;
 }
 
 .equipment-item p {
   font-size: 1.3vw;
+  /* font-size: clamp(14px, 3vw, 24px);  */
   margin-bottom: 0vw;
   color: #ffffff;
 }
@@ -355,7 +358,7 @@ body {
 
 /* Gift Certificate Section Styles */
 .gift-certificate {
-  padding: 2vw 0;
+  padding: 5vw 0;
   background-color: #333;
   color: #eee;
 }
@@ -364,7 +367,7 @@ body {
   font-size: 7vw;
   text-align: center;
   font-weight: 400;
-  margin-bottom: 1vw;
+  margin-bottom: 3vw;
   color: rgb(255 54 0); 
 }
 
@@ -386,6 +389,7 @@ body {
 .gift-text {
   max-width: 60%;
   font-size: 1.4vw;
+  /* font-size: clamp(12px, 4vw, 24px);  */
   font-weight: 400;
 }
 
@@ -397,7 +401,7 @@ body {
 
 /* Rental Conditions Section Styles */
 .rental-conditions {
-  padding: 2vw 0;
+  padding: 5vw 0 4vw 0;
   background-color: #ffffff;
   color: #000000;
 }
@@ -406,16 +410,24 @@ body {
   font-size: 7vw;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: rgb(255 54 0); 
 }
 
 .rental-text {
-  margin: 0 auto;
-  font-size: clamp(0.8rem, 0.5vw + 1rem, 2rem);
-  font-size: 1.5vw;  
-}
+  /* margin: 0 auto; */
+  font-weight: 400;
+  /* font-size: clamp(0.8rem, 0.5vw + 1rem, 2rem); */
 
+  font-size: 1.5vw; 
+  /* font-size: clamp(14px, 3vw, 24px);  */
+}
+/* .rental-text ul .li {
+  list-style: '✔ ';
+}
+.rental-text ul {
+  padding: 0 0 0 20px;
+} */
 .rental-text p {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1rem;
@@ -462,7 +474,12 @@ body {
   /* justify-content: space-between; */
   align-items: center;
 }
-
+.footer_phone-flex_1 {
+  display: flex;
+  width: 15vw;
+  /* justify-content: space-between; */
+  align-items: center;
+}
 .message_footer {
   width: 30vw;
   justify-content: end;
@@ -507,7 +524,7 @@ body {
 .footer_text-p {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  font-size: 1vw;
+  font-size: 0.7vw;
 }
 
 .ofer {
@@ -563,10 +580,19 @@ body {
   }
   .gift-text {
     font-size: 2.3vw;
-  }
-  .rental-text {
+  } */
+    .rental-text {
     font-size: 2.3vw;  
+  } 
+  .links-footer {
+    font-size: 2.3vw;
   }  
+  .address_footer {
+    font-size: 2.3vw;
+  }
+  .footer_address-text {
+    font-size: 2.3vw;
+  }
 }
 @media (max-width:640px) { 
   .equipment-list {
@@ -678,13 +704,16 @@ body {
 @media (max-width:530.5px) { 
 .equipment-item p {
   font-size: 2.5vw;
-}
+} 
 .rental-text {
   font-size: 2.5vw;  
 }  
 }
 
 @media (max-width:460px) { 
+.motorcycle-card .price {
+    font-size: 5.3vw;
+  }  
 .motorcycle-card p {
   font-size: 3.5vw;
 }
@@ -702,10 +731,19 @@ body {
 }
 .gift-text {
   font-size: 3.5vw;
-}
-.rental-text {
+} 
+ .rental-text {
   font-size: 3.5vw;  
-}    
+}  
+.links-footer {
+  font-size: 2.5vw;
+}  
+.address_footer {
+  font-size: 2.5vw;
+}
+.footer_address-text {
+  font-size: 2.5vw;
+}  
 }
 
 
@@ -719,6 +757,11 @@ body {
  .equipment-list {
     grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   } 
+  .maps iframe {
+    width: 85vw;
+    height: 50vw;
+    box-shadow: 0 0.1rem 0.3rem #950ebe33;
+  } 
 } 
 
 
@@ -726,6 +769,9 @@ body {
   .motorcycle-list {
     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   }
+  .equipment-list {
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  } 
 }
 
 
