@@ -62,85 +62,6 @@ function closeOnClick() {
 }
 
 
-
-
-
-
-
-
-
-
-// const scrollers = document.querySelectorAll(".scroller");
-
-// if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-//   addAnimation();
-// }
-
-// function addAnimation() {
-//   scrollers.forEach((scroller) => {
-
-//     scroller.setAttribute("data-animated", true);
-
-//     const scrollerInner = scroller.querySelector(".scroller__inner");
-//     const scrollerContent = Array.from(scrollerInner.children);
-
-//     scrollerContent.forEach((item) => {
-//       const duplicatedItem = item.cloneNode(true);
-//       duplicatedItem.setAttribute("aria-hidden", true);
-//       scrollerInner.appendChild(duplicatedItem);
-//     });
-//   });
-// }
-
-
-
-
-// let video1 = document.querySelector('.video1')
-// let video2 = document.querySelector('.video2')
-// let video3 = document.querySelector('.video3')
-// let btn1 = document.querySelector('.bar11')
-// let btn2 = document.querySelector('.bar22')
-// let btn3 = document.querySelector('.bar33')
-// btn1.addEventListener('click', ()=> {
-//   if (video1.play) {
-//     video1.pause();
-//   } 
-//   if (video2.play) {
-//     video2.pause();
-//   };
-//   if (video3.play) {
-//     video3.pause();
-//   };
-// });
-// btn2.addEventListener('click', ()=> {
-//   if (video1.play) {
-//     video1.pause();
-//   };
-//   if (video2.play) {
-//     video2.pause();
-//   };
-//   if (video3.play) {
-//     video3.pause();
-//   };
-  
-// });
-// btn3.addEventListener('click', ()=> {
-//   if (video1.play) {
-//     video1.pause();
-//   } 
-//   if (video2.play) {
-//     video2.pause();
-//   };
-//   if (video3.play) {
-//     video3.pause();
-//   };
-// });
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
@@ -220,26 +141,6 @@ document.addEventListener('DOMContentLoaded', function() {
   nextButton.style.display = 'none';
   }
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
