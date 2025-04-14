@@ -430,18 +430,35 @@ body {
   padding-top: 3vw;
 }
 
+
+
+
+
 .maps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   gap: 1rem;
+  justify-content: center;
 }
-
+.maps_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Ограничиваем максимальную ширину карты */
+  margin: 0 auto;
+}
 .maps iframe {
   width: 100%;
   height: 18rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 } 
+
+
+
+
+
 .maps_h {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5vw;
@@ -586,6 +603,10 @@ body {
   .maps {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
+  /* .maps iframe {
+    width: 80%;
+  }  */
+  
 }
 
 @media (max-width:600px) {
@@ -706,6 +727,16 @@ body {
 .maps_h {
   font-size: 4vw;
 }
+
+
+
+
+  .maps iframe {
+    width: 85%;
+  } 
+
+
+
 .message_flex {
   justify-content: space-between;
   
